@@ -1,15 +1,10 @@
-import React, { Component } from 'react';
-import FormContainer from './formContainer';
+import React from 'react';
+
 import FormComponent from './formComponent';
+import rl from './rl';
 
-const Form = FormContainer(FormComponent);
+const Form = rl.Container(FormComponent);
 
-class App extends Component {
-	render() {
-		return (
-			<Form />
-		);
-	}
-}
+const App = () => <Form />;
 
 export default App;
