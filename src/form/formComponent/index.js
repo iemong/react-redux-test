@@ -11,7 +11,7 @@ const FormComponent = props => (
     <h1>Our form example</h1>
     <div>
       <textarea
-        onChange={event => props.textAction(event.target.value)}
+        onChange={event => props.textAction({ text: event.target.value })}
         value={props.text}
       />
     </div>
